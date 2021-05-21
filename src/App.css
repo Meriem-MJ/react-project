@@ -6,9 +6,14 @@
 
 body{
     font-family: 'Roboto Condensed', sans-serif;
+    color: white;
 }
 
-/*********************** NAVBAR ***********************/
+/******************************** NAVBAR **********************************/
+nav{
+    z-index: 3;
+}
+
 .container-fluid{
     display: flex;
     justify-content: space-between;
@@ -35,4 +40,47 @@ body{
 }
 .navbar-nav > li > a:hover{
     border-bottom: 3px solid;
+}
+
+/******************************** HEADER **********************************/
+
+.header-wraper{
+    position: relative;
+    background: url(background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 84vh;
+}
+.main-info{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+}
+.main-info h1{
+    margin-bottom: 40px;
+}
+.main-form{
+    box-shadow: -1px 1px 60px 10px black;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 15px;
+    z-index: 2;
+}
+
+/******************************** PARTICLES ***********************************/
+
+.tsparticles-canvas-el{
+    position: absolute;
+    height: 50vh;
+    width: 50vw;
+    z-index: 1;
 }
